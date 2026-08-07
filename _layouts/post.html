@@ -4,15 +4,12 @@ layout: default
 <section class="post-container" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
     <h2 style="text-align: left; margin-bottom: 10px; color: var(--secondary-color);">{{ page.title }}</h2>
     <p style="color: #666; margin-bottom: 20px;">{{ page.date | date: "%Y年%m月%d日" }}</p>
-    
     {% if page.thumbnail %}
     <img src="{{ page.thumbnail | relative_url }}" alt="サムネイル" style="max-width: 100%; border-radius: 8px; margin-bottom: 30px;">
     {% endif %}
-    
     <div class="post-content" style="line-height: 1.8;">
         {{ content }}
     </div>
-    
     <div style="margin-top: 40px; text-align: center;">
         <a href="{{ '/reports.html' | relative_url }}" class="btn">活動報告一覧に戻る</a>
     </div>
