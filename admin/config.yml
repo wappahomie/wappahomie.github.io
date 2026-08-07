@@ -16,3 +16,12 @@ collections:
       - {label: "日付", name: "date", widget: "datetime"}
       - {label: "写真", name: "thumbnail", widget: "image", required: false}
       - {label: "本文", name: "body", widget: "markdown"}
+- name: "pages"
+    label: "ページ管理"
+    files:
+      - file: "index.html"
+        label: "ホームページ（TOP）"
+        name: "index"
+        fields:
+          - {label: "ページのタイトル", name: "title", widget: "string"}
+          - {label: "紹介文", name: "description", widget: "string"}
