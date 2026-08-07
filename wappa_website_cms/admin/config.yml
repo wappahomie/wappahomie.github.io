@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "reports"
+    label: "活動報告"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "日付", name: "date", widget: "datetime"}
+      - {label: "写真", name: "thumbnail", widget: "image", required: false}
+      - {label: "本文", name: "body", widget: "markdown"}
